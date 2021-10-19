@@ -19,7 +19,7 @@ const newAccountButtonTemplate = (title, { isAdding, isDisabled }) => {
       <div class="button-container">
         <button class="button-filled account__button-transaction js-button" ${addDisabledProperty(
           isDisabled
-        )}>
+        )} id="test-new-transaction">
             ${editButtonText}
         </button>
       </div>

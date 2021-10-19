@@ -17,10 +17,10 @@ const inputFieldTemplate = (field) => {
     field.isValid
   )}">
     <span class="login__span">${field.title}</span>
-      <input data-fieldid=${field.id} class="login__input js-input" 
+      <input data-fieldid=${field.id} class="login__input js-input"
       value="${field.value}" type="number" placeholder="Введите ${
     field.title
-  }" required >
+  }" required data-testid="test-transaction-input" >
   </label>
   `;
 };

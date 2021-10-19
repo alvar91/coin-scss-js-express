@@ -12,7 +12,7 @@ const saveButtonTemplate = (title, { isAdding, isDisabled }) => {
 
   return `
       <div class="button-login-container">
-        <button class="button-submit js-button" ${addDisabledProperty(
+        <button id="test-login-button" class="button-submit js-button" ${addDisabledProperty(
           isDisabled
         )}>
             ${editButtonText}

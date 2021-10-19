@@ -26,7 +26,7 @@ const createNavMenuTemplate = (item, currentRoute) => {
   return `<li class="header__item">
             <a class="header__link ${
               isActive ? "header__link--active" : ""
-            }" href="/${item.route}">${item.title}</a>
+            }" href="/${item.route}" id="test-href-${item.title}">${item.title}</a>
           </li>`;
 };
 

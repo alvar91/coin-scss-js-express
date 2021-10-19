@@ -21,7 +21,7 @@ const inputFieldTemplate = (field) => {
         field.id
       } class="currency__input currency__input--long login__input js-input" value="${
     field.value
-  }" type="number" placeholder="Введите ${field.title}" required>
+  }" type="number" placeholder="Введите ${field.title}" required id="test-new-currency">
   </label>
   `;
 };

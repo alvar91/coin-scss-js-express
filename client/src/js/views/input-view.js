@@ -17,11 +17,11 @@ const inputFieldTemplate = (field, isPassword) => {
     field.isValid
   )}">
     <span class="login__span">${field.title}</span>
-      <input data-fieldid=${field.id} class="login__input js-input" 
+      <input data-fieldid=${field.id} class="login__input js-input"
       value="${field.value}" ${
     isPassword
-      ? 'type="password" autocomplete="current-password"'
-      : 'type="text" autocomplete="username"'
+      ? 'type="password" id="test-user-password" autocomplete="current-password"'
+      : 'type="text" id="test-user-login"  autocomplete="username"'
   } placeholder="Введите ${field.title}" required >
   </label>
   `;

@@ -16,7 +16,7 @@ const createProfileItemTemplate = (account) => {
 
   const transactionDate = account?.transactions[0]?.date;
 
-  return `<li>
+  return `<li data-testid="test-account-profile">
     <article class="accounts__item"><span class="accounts__id">${
       account.account
     }</span><span class="accounts__cost">${Utils.formatMoney(

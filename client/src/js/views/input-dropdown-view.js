@@ -41,7 +41,7 @@ const inputDropdownFieldTemplate = (field, verifiedAccounts) => {
     field.value
   }" class="login__input account-dropdown-toggle js-click-dropdown js-input" placeholder="Введите ${
     field.title
-  }" required />
+  }" required data-testid="test-transaction-dropdown" />
         </label>
         ${renderDropdown(field, verifiedAccounts)}
       </div>

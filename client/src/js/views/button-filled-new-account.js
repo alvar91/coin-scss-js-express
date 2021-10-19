@@ -17,7 +17,7 @@ const newAccountButtonTemplate = (title, { isAdding, isDisabled }) => {
 
   return `
       <div class="button-container">
-        <button class="button-filled accounts__button js-button" ${addDisabledProperty(
+        <button class="button-filled accounts__button js-button" id="test-new-account" ${addDisabledProperty(
           isDisabled
         )}>
             ${editButtonText}

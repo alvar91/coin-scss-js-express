@@ -1,0 +1,11 @@
+{
+  "baseUrl": "http://localhost:3000/",
+  "env": {
+      "login": "developer",
+      "password": "skillbox",
+      "testAccountFrom": "74213041477477406320783754",
+      "testAccountTo": "78204070047055676587628552"
+  },
+  "video": false,
+  "chromeWebSecurity": false
+}
