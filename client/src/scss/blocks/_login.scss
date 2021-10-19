@@ -1,0 +1,135 @@
+.login {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 40px 50px 40px;
+    width: 500px;
+    min-height: 366px;
+    border-radius: 50px;
+    transform: translateY(-25%);
+    background-color: var(--grey);
+
+    @include tablet() {
+      padding: 40px;
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__input {
+    position: relative;
+    padding: 10px;
+    padding-left: 16px;
+    margin-right: 19px;
+    width: 300px;
+    border: 1px solid var(--grey-shade);
+    border-radius: 7px;
+    background-color: var(--white);
+    outline: none;
+
+    &::placeholder {
+      @include font(16px, 400);
+      color: var(--grey-dark);
+    }
+
+    @include tablet() {
+      margin: 0;
+      margin-bottom: 10px;
+    }
+
+    &:hover {
+      border: 1px solid var(--primary-main);
+      background-color: rgba(160, 195, 255, 0.05);
+      transition: border, background-color 0.3s;
+    }
+
+    &:focus {
+      border: 1px solid var(--primary-main);
+      background-color: rgba(160, 195, 255, 0.1);
+      transition: border, background-color 0.3s;
+    }
+
+    &--focused {
+      border: 1px solid var(--primary-main);
+      background-color: rgba(160, 195, 255, 0.1);
+      transition: border, background-color 0.3s;
+    }
+  }
+
+  &__label {
+    display: flex;
+    justify-content: end;
+
+    align-items: center;
+    font-family: "Ubuntu";
+    @include font(16px, 500);
+
+    @include tablet() {
+      flex-direction: column;
+    }
+
+    &::after {
+      display: inline-block;
+      content: " ";
+      background-color: transparent;
+      height: 24px;
+      width: 24px;
+    }
+
+    &--error::after {
+      display: inline-block;
+      content: " ";
+      background-image: url("../img/error-icon.svg");
+      background-size: 24px 24px;
+      height: 24px;
+      width: 24px;
+    }
+
+    &--success::after {
+      display: inline-block;
+      content: " ";
+      background-image: url("../img/success-icon.svg");
+      background-size: 24px 24px;
+      height: 24px;
+      width: 24px;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 25px;
+    }
+
+    &--error .login__input {
+      border: 1px solid var(--input-red);
+    }
+
+    &--success .login__input {
+      border: 1px solid var(--input-green);
+    }
+  }
+
+  &__span {
+    margin-right: 18px;
+
+    @include tablet() {
+      margin: 0;
+      margin-bottom: 10px;
+    }
+  }
+
+  &__error {
+    @include font(16px, 500);
+    color: var(--input-red);
+  }
+}

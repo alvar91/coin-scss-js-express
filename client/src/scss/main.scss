@@ -1,0 +1,29 @@
+@import "./variables.scss";
+@import "./mixins.scss";
+@import "./normalize.scss";
+@import "./fonts.scss";
+
+@import "./general.scss";
+@import "./heading.scss";
+
+@import "./blocks/container.scss";
+@import "./blocks/button.scss";
+
+@import "./blocks/header.scss";
+@import "./blocks/login.scss";
+
+@import "./blocks/accounts.scss";
+
+@import "./blocks/account.scss";
+
+@import "./blocks/currency.scss";
+
+@import "./blocks/atms.scss";
+@import "./blocks/baloon.scss";
+
+@import "./blocks/toast.scss";
+
+@import "./blocks/loader.scss";
+@import "./blocks/dropdown.scss";
+
+@import "./blocks/history.scss";

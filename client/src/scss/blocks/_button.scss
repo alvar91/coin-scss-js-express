@@ -1,0 +1,129 @@
+.button-filled {
+  align-self: start;
+  padding: 12px 20px;
+  border: 2px solid var(--button-main);
+  border-radius: 10px;
+  @include font(16px, 500);
+  line-height: 1;
+  color: var(--white);
+  text-decoration: none;
+  background-color: var(--button-main);
+  cursor: pointer;
+  outline: none;
+  z-index: 1;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: var(--button-hover);
+    transition: background-color 0.3s;
+  }
+
+  &:active {
+    border: 2px solid var(--button-active);
+    background-color: var(--button-active);
+    transition: background-color 0.3s;
+  }
+
+  &:focus {
+    border: 2px solid var(--button-active);
+    background-color: var(--button-active);
+    transition: background-color 0.3s;
+  }
+
+  &:disabled {
+    background-color: var(--button-disabled);
+    border: 2px solid var(--grey-shade);
+    transition: background-color 0.3s;
+  }
+}
+
+.button-submit {
+  display: flex;
+  align-self: end;
+  align-items: center;
+  margin-left: 75px;
+  padding: 14px 21px;
+  border: 2px solid var(--button-main);
+  border-radius: 10px;
+  @include font(16px, 700);
+  line-height: 1;
+  color: var(--white);
+  background-color: var(--button-main);
+  cursor: pointer;
+  outline: none;
+  z-index: 1;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: var(--button-hover);
+    transition: background-color 0.3s;
+  }
+
+  &:active {
+    border: 2px solid var(--button-active);
+    background-color: var(--button-active);
+    transition: background-color 0.3s;
+  }
+
+  &:focus {
+    border: 2px solid var(--button-active);
+    background-color: var(--button-active);
+    transition: background-color 0.3s;
+  }
+
+  &:disabled {
+    background-color: var(--button-disabled);
+    border: 2px solid var(--grey-shade);
+    transition: background-color 0.3s;
+  }
+
+  @include tablet() {
+    margin: 0;
+    align-self: center;
+  }
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.button-loader {
+  align-self: center;
+  margin-right: 6px;
+  width: 16px;
+  height: 16px;
+  background: url("img/button-loader.svg") center center no-repeat;
+  animation: rotate 1.4s linear infinite;
+
+  &:disabled {
+    background-color: var(--button-disabled);
+    border: 2px solid var(--grey-shade);
+    transition: background-color 0.3s;
+  }
+}
+
+.button-loader--light {
+  background: url("img/button-loader-light.svg") center center no-repeat;
+}
+
+.button-login-container {
+  display: flex;
+  justify-content: flex-start;
+
+  @include tablet() {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+
+  @include tablet() {
+    display: block;
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,38 @@
+:root {
+  --primary-main: #116acc;
+  --primary-light: #a0c3ff;
+  --secondary-main: #182233;
+  --secondary-light: #b3cee2;
+  --secondary-shade: #d9dde7;
+  --secondary-red: #fd4e5d;
+  --secondary-green: #76ca66;
+  --bg-main: #f3f4f6;
+  --grey: #e5e5e5;
+  --white: #fff;
+
+  --grey-light: #f6f6f6;
+  --md-grey: #eaeaea;
+
+  --grey-dark: #6b7280;
+  --grey-shade: #9ca3af;
+  --grey-shade2: #374151;
+  --black: #000;
+  --input-red: #ba0000;
+  --input-green: #76ca66;
+
+  --button-main: #136acb;
+  --button-hover: #5997dc;
+  --button-active: #0b4a8f;
+  --button-disabled: #d0d5db;
+
+  --chart-profit: #76CA66;
+  --chart-loss: #FD4E5D;
+}
+
+$breakpoints: (
+  xs: 576px,
+  sm: 767px,
+  md: 1023px,
+  lg: 1300px,
+  xl: 1920px,
+);
